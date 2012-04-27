@@ -21,7 +21,7 @@
 
 /* default text style */
 stage {
-    font-family: Comic Sans MS, WenQuanYi Micro Hei, serif;
+    font-family: Purisa, serif;
     font-size: 9pt;
     color: #ace;
 }
@@ -136,9 +136,9 @@ StScrollBar StButton#vhandle:hover
 
 .popup-menu-boxpointer {
     -arrow-border-radius: 8px;
-    -arrow-background-color: rgba(0,0,0,0.9);
-    -arrow-border-width: 2px;
-    -arrow-border-color: #a5a5a5;
+    -arrow-background-color: rgba(0,8,27,0.85);
+    -arrow-border-width: 1px;
+    -arrow-border-color: black;
     -arrow-base: 24px;
     -arrow-rise: 11px;
 }
@@ -199,7 +199,10 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-menu-item:active {
-    background-color: #4c4c4c;
+	color: white;
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(0,51,102,0.6);
+    background-gradient-end: rgba(0,51,102,0.1);
 }
 
 .popup-menu-item:insensitive {
@@ -214,10 +217,10 @@ StScrollBar StButton#vhandle:hover
 }
 
 .popup-separator-menu-item {
-    -gradient-height: 2px;
-    -gradient-start: rgba(8,8,8,0);
-    -gradient-end: #333333;
-    -margin-horizontal: 1.5em;
+    -gradient-height: 1px;
+    -gradient-start: rgba(0,0,0,0);
+    -gradient-end: rgba(0,128,255,0.6);
+    -margin-horizontal: 0;
     height: 1em;
 }
 
@@ -1659,9 +1662,8 @@ StScrollBar StButton#vhandle:hover
 
 .modal-dialog {
     border-radius: 24px;
-    background-color: rgba(0.0, 0.0, 0.0, 0.9);
-    border: 2px solid #868686;
-
+    background-color: rgba(0,0,0,0.6);
+    border: 1px solid rgba(0,51,102,0.6);
     padding-right: 42px;
     padding-left: 42px;
     padding-bottom: 30px;
@@ -1675,7 +1677,6 @@ StScrollBar StButton#vhandle:hover
 
 .modal-dialog-button {
     border-radius: 18px;
-
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px 32px 5px;
